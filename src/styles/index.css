@@ -1,0 +1,93 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --muted: #f1f1ef;
+  --text: #111827;
+  --sub: #4b5563;
+  --line: #e5e7eb;
+  --accent: #4f46e5;
+  --soft: #eef2ff;
+}
+
+[data-theme="dark"] {
+  --bg: #0b0f19;
+  --surface: #111827;
+  --muted: #172033;
+  --text: #e5e7eb;
+  --sub: #9ca3af;
+  --line: #1f2a3d;
+  --accent: #818cf8;
+  --soft: rgba(99, 102, 241, 0.16);
+}
+
+@layer base {
+  * {
+    border-color: var(--line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 7vw, 4.4rem);
+    font-weight: 800;
+    line-height: 1.08;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+    font-weight: 750;
+    line-height: 1.2;
+  }
+
+  /* Visible focus ring per Section 9 */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+}
+
+.eyebrow {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>SK ABDUL SABBIR | Software Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of SK ABDUL SABBIR, a Computer Science undergraduate in Hyderabad building full-stack web applications with HTML, CSS, JavaScript, Node.js and Java."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SK ABDUL SABBIR | Software Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio of SK ABDUL SABBIR, a Computer Science undergraduate in Hyderabad building full-stack web applications with HTML, CSS, JavaScript, Node.js and Java."
+    />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SK ABDUL SABBIR | Software Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of SK ABDUL SABBIR, a Computer Science undergraduate in Hyderabad building full-stack web applications with HTML, CSS, JavaScript, Node.js and Java."
+    />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- Anti-flash theme script: runs before paint -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('portfolio-theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = saved ? saved : (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-bg text-text antialiased selection:bg-accent/20 selection:text-accent">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

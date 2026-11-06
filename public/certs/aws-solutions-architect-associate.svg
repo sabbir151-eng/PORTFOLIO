@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Border & Background -->
+  <rect width="1200" height="850" fill="url(#bgGrad)" rx="16" />
+  <rect x="24" y="24" width="1152" height="802" fill="none" stroke="#334155" stroke-width="2" rx="12" />
+  <rect x="36" y="36" width="1128" height="778" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.6" rx="8" />
+
+  <!-- Corner Accents -->
+  <circle cx="50" cy="50" r="4" fill="#fbbf24" />
+  <circle cx="1150" cy="50" r="4" fill="#fbbf24" />
+  <circle cx="50" cy="800" r="4" fill="#fbbf24" />
+  <circle cx="1150" cy="800" r="4" fill="#fbbf24" />
+
+  <!-- AWS Header Logo text -->
+  <text x="600" y="140" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="34" fill="#f8fafc" letter-spacing="0.05em">
+    AMAZON WEB SERVICES
+  </text>
+  <text x="600" y="175" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="16" fill="#94a3b8" letter-spacing="0.2em">
+    Training and Certification
+  </text>
+
+  <!-- Divider -->
+  <line x1="450" y1="210" x2="750" y2="210" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Body -->
+  <text x="600" y="270" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="400" font-size="18" fill="#94a3b8">
+    This is to certify that
+  </text>
+
+  <text x="600" y="340" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="44" fill="#ffffff" letter-spacing="-0.01em">
+    SK ABDUL SABBIR
+  </text>
+
+  <text x="600" y="390" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="400" font-size="18" fill="#94a3b8">
+    has successfully completed the program requirements for
+  </text>
+
+  <!-- Title Banner -->
+  <rect x="250" y="420" width="700" height="90" rx="10" fill="#0f172a" stroke="#475569" stroke-width="1.5" />
+  <text x="600" y="465" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="750" font-size="26" fill="#fbbf24">
+    AWS Certified Solutions Architect – Associate
+  </text>
+  <text x="600" y="495" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="15" fill="#e2e8f0">
+    Associate Level Certification
+  </text>
+
+  <!-- Details Strip -->
+  <g transform="translate(180, 570)">
+    <!-- Issued Date -->
+    <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="14" fill="#94a3b8">Issue Date</text>
+    <text x="0" y="28" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="18" fill="#f8fafc">August 17, 2026</text>
+
+    <!-- Expiration Date -->
+    <text x="320" y="0" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="14" fill="#94a3b8">Expiration Date</text>
+    <text x="320" y="28" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="18" fill="#f8fafc">August 17, 2029</text>
+
+    <!-- Issuer -->
+    <text x="640" y="0" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="14" fill="#94a3b8">Issuer</text>
+    <text x="640" y="28" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="18" fill="#f8fafc">Amazon Web Services</text>
+  </g>
+
+  <!-- Validation Footer -->
+  <rect x="200" y="680" width="800" height="70" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="230" y="710" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="13" fill="#94a3b8">
+    VALIDATION NUMBER
+  </text>
+  <text x="230" y="734" font-family="ui-monospace, SFMono-Regular, monospace" font-weight="700" font-size="17" fill="#fbbf24">
+    b6566e38dc4f4d65af8e9996221d07c9
+  </text>
+
+  <text x="960" y="722" text-anchor="end" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="13" fill="#38bdf8">
+    Verify: aws.amazon.com/verification
+  </text>
+</svg>
+
